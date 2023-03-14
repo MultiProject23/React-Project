@@ -1,15 +1,5 @@
 import styled from "@emotion/styled";
 
-// const Review_list_searchContainer = styled.div`
-//   background-color: black;
-//   display : flex;
-//   flex-direction: column;
-//   width: 100%;
-//   height : 3%;
-//   justify-content: center;
-//   align-items : center;
-// `;
-
 const Review_list_search = styled.div`
   background-color: white;
   display : flex;

@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 
 const Review_Modal = styled.div`
 position: fixed;
+z-index : 1000;
 top: 0;
 left: 0;
 width: 100%;
@@ -14,8 +15,8 @@ align-items: center;
 
 const Review_Modal_Body = styled.div`
   position: absolute;
-  width: 1000px;
-  height: 600px;
+  width: 60%; //1000px 
+  height: 60%; // 600px 
   padding: 40px;
   text-align: center;
   background-color: rgb(255, 255, 255);
@@ -67,7 +68,7 @@ position: absolute;
   border: none;
   color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  font-size: 20px;
+  font-size: 17px;
   cursor:pointer;
 `
 
@@ -76,7 +77,7 @@ const Review_Modal_ImagePrd = styled.img`
 display: flex;
 justify-content: center;
 align-items : center;
-width : 500px;
+width : 400px;
 // height : 100px;
 aspect-ratio: 1/1; 
 cursor:pointer; 
@@ -90,22 +91,6 @@ align-items : center;
 width : 90%;
 height : 15%;  
 border- bottom : 1px solid #d3d3d3;
-`
-const Review_Modal_InfoStar_userImgContainer = styled.div`
-display: flex;
-justify-content: center;
-align-items : center;
-width : 20%;
-height : 100%;
-// border : 2px solid yellow;
-`
-const Review_Modal_InfoStar_userImg = styled.img`
-display: flex;
-justify-content: center;
-align-items : center;
-width : 60px;
-aspect-ratio: 1/1;
-border-radius: 70%;
 `
 
 const Review_Modal_InfoStar_StarIDContaner = styled.div`
@@ -151,8 +136,7 @@ const Review_Modal_Content = styled.div`
   align-items : top;
   margin-top : 20px;
   width : 100%;
-  height : 70%;  
-  // border : 1px solid gray;
+  height : 80%;  
 `
 const Review_Modal_BuyItemBox = styled.div`
   background-color : #f8f8f8;  
@@ -160,8 +144,7 @@ const Review_Modal_BuyItemBox = styled.div`
   justify-content: center;
   align-items : center;
   width : 100%;
-  height : 25%;
-  // border : 5px solid Black;
+  height : 50%;
 `
 
 const Review_Modal_BuyItemImage = styled.img`
@@ -183,7 +166,9 @@ const Review_Modal_BuyItemName = styled.div`
   width : 80%;
   height : 80px;
   border : 1px solid #d3d3d3;
+  color : #807675;
   cursor:pointer
+  
 `
 
   export {Review_Modal,Review_Modal_Body,Review_Modal_CloseBtn,
@@ -192,8 +177,6 @@ const Review_Modal_BuyItemName = styled.div`
     Review_Modal_ImagePrd,
     Review_Modal_Body_section2,
     Review_Modal_InfoStarSection,
-    Review_Modal_InfoStar_userImgContainer,
-    Review_Modal_InfoStar_userImg,
     Review_Modal_InfoStar_StarIDContaner,
     Review_Modal_InfoStar_Star,Review_Modal_InfoStar_userID,
     Review_Modal_ContentSection,
